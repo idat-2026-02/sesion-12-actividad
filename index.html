@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compilador Maestro — Evaluación Gamificada de HTML</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Quiz interactivo gamificado en tiempo real para estudiantes de nivel intermedio en HTML. Evaluaciones del Sector 1 al Sector 5.">
+  <meta name="author" content="IDAT 2026">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Preconnect to Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Cybernetic Grid Decorative Background Overlay -->
+  <div class="cyber-grid-overlay"></div>
+
+  <!-- App Wrapper -->
+  <div class="cyber-container">
+    
+    <!-- Top Header Navigation Dashboard -->
+    <header>
+      <div class="title-area">
+        <h1>HTML COMPILER</h1>
+        <p>EVALUACIÓN ESTRUCTURAL Y SEMÁNTICA — SESIONES 1 A 10</p>
+      </div>
+      
+      <!-- Live Game Hub Stats -->
+      <div class="stats-hub">
+        <div class="stat-terminal" id="xp-stat-box">
+          <span class="stat-label">Experiencia</span>
+          <span class="stat-val" id="xp-display-val">0 XP</span>
+        </div>
+        <div class="stat-terminal" id="rank-stat-box">
+          <span class="stat-label">Rango</span>
+          <span class="stat-val amber" id="rank-display-val">Syntax Squire</span>
+        </div>
+        <div class="stat-terminal" id="time-stat-box">
+          <span class="stat-label">Tiempo</span>
+          <span class="stat-val" id="time-display-val">00:00</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Dynamic Game Mount Container -->
+    <div id="game-container">
+      <!-- Loaded dynamically via JavaScript: Setup, Quiz, and Report -->
+      <div style="display: flex; align-items: center; justify-content: center; height: 300px; font-family: var(--font-mono); color: var(--primary-neon);">
+        <span style="animation: blink 1s infinite;">[INICIANDO INTERFAZ DE COMANDO...]</span>
+      </div>
+    </div>
+
+    <!-- Retro Footer -->
+    <footer style="margin-top: auto; padding: 24px 0 10px; border-top: 1px solid rgba(255,255,255,0.05); display: flex; justify-content: space-between; align-items: center; font-size: 0.75rem; color: var(--text-muted); font-family: var(--font-mono);">
+      <div>&copy; 2026 IDAT - Desarrollo Web</div>
+      <div style="display: flex; gap: 15px;">
+        <a href="silabo_original.html" style="color: var(--primary-neon); text-decoration: none; border-bottom: 1px dashed var(--primary-neon);">Ver Sílabo Original</a>
+        <span>V.2.6.0-HTML</span>
+      </div>
+    </footer>
+    
+  </div>
+
+  <!-- CSS CRT Shake & Scanline Effects (Inline styles to ensure custom screen behaviors) -->
+  <style>
+    /* Custom CSS animations needed inside HTML layout for specific page shakes */
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+      20%, 40%, 60%, 80% { transform: translateX(5px); }
+    }
+  </style>
+
+  <!-- Core Javascript Logic -->
+  <script src="app.js"></script>
+</body>
+</html>
